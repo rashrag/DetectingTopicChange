@@ -3,6 +3,7 @@ import pydub
 def convertToFlac(audioFileName):
     pydub.AudioSegment.converter = r"ffmpeg-20170921-183fd30-win64-static\bin\ffmpeg.exe"
     song = pydub.AudioSegment.from_wav(audioFileName)
+    audioFileName = audioFileName.split(".")[0]
     exportName = audioFileName +".flac"
     song.export(exportName, format="flac")
 

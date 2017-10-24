@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$USER_HOME$/PycharmProjects/IS_Renal/.idea/IS_Renal.iml" filepath="$USER_HOME$/PycharmProjects/IS_Renal/.idea/IS_Renal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/DetectingTopicChange.iml" filepath="$PROJECT_DIR$/.idea/DetectingTopicChange.iml" />
     </modules>
   </component>
 </project>
