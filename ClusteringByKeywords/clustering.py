@@ -6,6 +6,8 @@ import operator
 import string
 import numpy as np
 import math
+import matplotlib.pyplot as plt
+from nltk.corpus import stopwords
 from sklearn.cluster import KMeans
 import nltk.data
 import pandas as pd
@@ -15,8 +17,9 @@ from tabulate import tabulate
 #Using text razor to get the topic type
 # Currently used - entities
 def createKeywordsFile(fileName):
+    rashkey = "cc9e748f39591c90171653b1ded93c6bd2b8a3da262b3a116aa6524d"
     outPutFileName = fileName+"-entities.txt"
-    client = TextRazor("eb2a5954577a28b1ba8a97005281289493eee48179d2ac1883b685e6",
+    client = TextRazor( "fdd39e9dde7d84983bbe964c514035f3c483d7df5996f62541ef76bc",
                        extractors=["entities"])
     outputFile = open(outPutFileName, "w")
     outPutFileName = "entityStore.txt"
@@ -173,22 +176,67 @@ def reverse(dic):
 
 #Kmeans clustering method
 def kMeans(X):
-    kmeans = KMeans(n_clusters=10, random_state=0).fit(X)
+    kmeans = KMeans(n_clusters=15, random_state=0).fit(X)
     labels = kmeans.labels_
+    return labels
     indices = {}
-    print([i for i, x in enumerate(labels) if x == 10])
     for l in range(0,11):
         indices[l] = [i for i, x in enumerate(labels) if x == l]
     for l in range(0,11):
         print(str(l)+":"+ str(len(indices[l])))
     print(indices)
 
+    return indices
+
+def readMainTerms():
+    tokensFile = open("tokens.dat", "r")
+    tokdi = {}
+    i = 1
+    for t in tokensFile:
+        tokdi[i] = t
+        i = i + 1
+    return tokdi
+
+def visualize(df):
+    groups = df.groupby('cluster')
+    fig, ax = plt.subplots(figsize=(17, 9))  # set size
+    ax.margins(0.05)  # Optional, just adds 5% padding to the autoscaling
+    for name, group in groups:
+        ax.plot(group, marker='o', linestyle='', ms=12,mec='none')
+        ax.set_aspect('auto')
+        ax.tick_params( \
+            axis='x',  # changes apply to the x-axis
+            which='both',  # both major and minor ticks are affected
+            bottom='off',  # ticks along the bottom edge are off
+            top='off',  # ticks along the top edge are off
+            labelbottom='off')
+        ax.tick_params( \
+            axis='y',  # changes apply to the y-axis
+            which='both',  # both major and minor ticks are affected
+            left='off',  # ticks along the bottom edge are off
+            top='off',  # ticks along the top edge are off
+            labelleft='off')
+
+    ax.legend(numpoints=1)  # show legend with only 1 point
+
+
+    plt.show()  # show the plot
+
 
 if __name__=="__main__":
     #outFile = createKeywordsFile("annotationFile")
     outFile = "annotationFile-entities.txt"
+    N = 200 #Change this
+    #stopWords = list(set(stopwords.words('english')))
     stopWords = []
-    N = 407 #Change this
     ctf, df = loadData(outFile, stopWords, True)
     features = featureDesign(N)
-    kMeans(features)
+    labels = kMeans(features)
+    terms = readMainTerms()
+    i = range(1,N+1)
+    topics = {'terms': terms, 'cluster': labels}
+    frame = pd.DataFrame(topics, index=i, columns=['terms', 'cluster'])
+    print(frame)
+    plt.plot(frame.index, frame['cluster'])
+    plt.show()
+    #visualize(frame)

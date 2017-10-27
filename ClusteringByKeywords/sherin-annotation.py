@@ -1,4 +1,3 @@
-Sentence
 A century ago, on the sands of Kitty Hawk, two brothers, Wilbur and Orville Wright, bicycle mechanics and inventors, built flying machines which would transform our world.
 Today, as we mark the centennial of the Wrights' great achievement, a team of modern pilots and aircraft builders have become aviation detectives, tracking the Wright brothers' 12 years of experiment, innovation, and genuine risk, which would create the modern airplane.
 It feels great.
@@ -86,10 +85,9 @@ Yes.
 Unlike other dreamers and experimenters, before the Wrights even began their project, they broke the problem of flight into three distinct parts.
 If you think about an airplane, it really requires three separate systems, at least, to function.
 You have to have wings that will lift you into the air; you have to have a propulsion system that will move the wings through the air to generate lift; and you have to have a control system, a means of balancing the airplane when, when it's in the air.
-The Wrights used their earliest gliders to work on the problem of lift how to get wood and fabric to seemingly defy gravity and rise into the air.
+The Wrights used their earliest gliders to work on the problem of lifthow to get wood and fabric to seemingly defy gravity and rise into the air.
 That's just what their pictures look like.
-It is!
-Yeah?
+It is
 Fifteen's an average right now.
 Okay, that's good right there.
 Ten, fifteen.
@@ -175,7 +173,7 @@ From the Wrights' first gliders through modern jets, aircraft are steered by ban
 Individually changing the shape of wings, either by warping or with modern ailerons, has become the basis of all controlled flight.
 Their idea of having an active control system coupled to human intelligence, so that, the human being was every bit a part of the machine and, so, in essence, it's the man that..., the airplane becomes, the manifestation of your mind.
 I'm not going to.
-Jay, uh...
+Jay, uh
 After several flights on a tether, Jay Grattan is ready to try her first free flight in the reconstructed 1902 glider.
 Okay.
 Here comes the wind.
@@ -183,7 +181,7 @@ Wouldn't you know it?
 Seventeen point eight, twenty, twenty, twenty-eight...
 Are we ready?
 Yeah, let's go.
-Nineteen...
+Nineteen
 The Wrights' 1902 glider had wings which could both lift and steer the craft.
 But controlling the plane by swiveling the hips isn't easy, and it can only be practiced in the air.
 Very, very, very good.
@@ -224,7 +222,7 @@ But the Wright brothers kept their progress under wraps, concerned about high-pr
 In Washington, Dr. Samuel Langley, with $50,000 in government backing, was putting the finishing touches on his massive flying machine, the aerodrome.
 Samuel Langley, the third Secretary of the Smithsonian, had conducted his experiments with model airplanes.
 So, when he went to build a full-scale aerodrome, as he called it, it was actually sort of the world's largest model airplane.
-It was a thing that was inherently stable it had some control, but he was actually going to come back and worry about control later.
+It was a thing that was inherently stableâ€”it had some control, but he was actually going to come back and worry about control later.
 The first week of December, 1903, Dr. Langley's pilot, Charles Manley, attempted to launch his plane from a barge on the Potomac.
 The huge Aerodrome was catapulted down the rail and then, seconds later, broke apart and plunged into the icy river.
 Manley was saved from drowning, but, as the aircraft sank, so did the public's belief that powered flight would be possible.
@@ -233,9 +231,9 @@ So when they got up that morning, they had to warm themselves up and cook a litt
 Orville set the camera up and pointed it at a spot beyond the end of the rail, where he thought the airplane might be if it actually left the rail.
 And he put a Coast Guardsman named John Daniels in charge of the camera and told him just to squeeze the bulb if he saw the airplane leave the track.
 The brothers kind of pulled off by themselves for a minute, and, uh, just talked quietly.
-Orville climbs onto the airplane, and when everything's ready to go he has Wilbur on the right wingtip to kind of keep it balanced...and Orville flipped the clip open, and down they went into the air.
+Orville climbs onto the airplane, and when everything's ready to goâ€”he has Wilbur on the right wingtip to kind of keep it balanced...and Orville flipped the clip open, and down they went into the air.
 The first flight was 120 feet in 12 seconds.
-Each flight was a little longer than the one before it, but it really wasn't until the fourth flight uh, Wilbur's flight that they really flew far enough to prove to themselves that they had achieved sustained flight.
+Each flight was a little longer than the one before it, but it really wasn't until the fourth flightâ€”uh, Wilbur's flightâ€”that they really flew far enough to prove to themselves that they had achieved sustained flight.
 They flew down the beach in 59 seconds, and it was real impressive.
 There aren't many days that you can actually identify when history changes, but December 17th, 1903, was one of those days, because it was the day on which an airplane flew for the very first time.
 After dinner, Orville hiked down to the telegraph office and sent a brief message to his father announcing the birth of aviation and assuring him they would be home for Christmas.
