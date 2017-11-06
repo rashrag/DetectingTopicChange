@@ -226,7 +226,7 @@ def visualize(df):
 if __name__=="__main__":
     #outFile = createKeywordsFile("annotationFile")
     outFile = "annotationFile-entities.txt"
-    N = 200 #Change this
+    N = 275 #Change this
     #stopWords = list(set(stopwords.words('english')))
     stopWords = []
     ctf, df = loadData(outFile, stopWords, True)
@@ -237,6 +237,6 @@ if __name__=="__main__":
     topics = {'terms': terms, 'cluster': labels}
     frame = pd.DataFrame(topics, index=i, columns=['terms', 'cluster'])
     print(frame)
-    plt.plot(frame.index, frame['cluster'])
+    plt.scatter(frame.index, frame['cluster'])
     plt.show()
     #visualize(frame)
