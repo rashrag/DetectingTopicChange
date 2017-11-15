@@ -1,7 +1,11 @@
 import numpy as np
 import affinityPropogation as af
 from textrazor import TextRazor
-
+import math
+import csv
+from textrazor import TextRazorAnalysisException
+from urllib.error import HTTPError
+    
 def splitTopics(topicsli):
     split = [words for segments in topicsli for words in segments.split()]
     split = list(set(split))
@@ -60,8 +64,79 @@ def getOuput(txtFile):
         clusterdict[topicsli[ind]] = topicind[labels[ind]]
     return  clusterdict
 
+
+def buildArray(txtFile, clusterdict,windowsize):
+    ####################Done once##############################################################################
+    inFile = open(txtFile, encoding='utf8').read()
+    tokenizer = nltk.data.load('tokenizers/punkt/english.pickle')
+    sentences = tokenizer.tokenize(inFile)
+    num_columns = math.ceil(len(sentences)/windowsize) + 1
+    df = pd.DataFrame(index=phraseDict, columns=range(1,num_columns))
+    df = df.fillna(0)
+    sentence_num=1
+    no_cluster_dict = {}
+    textrazor_key = "eb2a5954577a28b1ba8a97005281289493eee48179d2ac1883b685e6"
+    ###########################################################################################################
+    
+    for i in range(0,len(sentences),windowsize):
+        #while i in range(0,len(sentences),windowsize):
+        try:
+            print("i = ", i)
+            client = TextRazor(textrazor_key, extractors=["topics"])
+            row=0
+            sentence = str(sentences[i:i+windowsize])
+            print(i , sentence)
+            topicDict = {}
+            response = client.analyze(sentence)
+            topics = get_top_relevant_topics(response, 0.5)
+            cluster_val = 0
+            for topic in topics:
+                print(" ", topic.label, topic.score)
+                topicDict.update({topic.label: topic.score})
+            for key in clusterdict:
+                print('Phrase Number =',row)
+                phrase = clusterdict.get(key)
+                print(clusterdict.get(key))
+                val = 0
+
+                for topicKey in topicDict:
+                    #print('Topic Number = ',j)
+                    #print(topicKey, topicDict.get(topicKey))
+                    if topicKey in phrase:
+                        print(topicKey, topicDict.get(topicKey))
+                        val += topicDict.get(topicKey)
+                print('val =', val)
+                print('row =', row, 'sentence_num =', sentence_num)
+                df[sentence_num].iloc[row] = val
+                cluster_val += val
+                row+= 1
+            if cluster_val == 0:
+                no_cluster_dict.update({sentence_num: topicDict})
+            sentence_num += 1
+
+        except (HTTPError, TextRazorAnalysisException) as e:
+            print("Error on " ,textrazor_key)
+            textrazor_key = "fdd39e9dde7d84983bbe964c514035f3c483d7df5996f62541ef76bc"#"324337f35ea1876aae377a6f1191ab5a5b9aaced32f9a4e3634e74c5"
+            print("i = ", i)
+            #i = i - windowsize
+            #print("i = ", i)
+            print(e)
+            continue
+    df_csv_file = 'output_ws'+str(windowsize)+ '.csv'
+    no_cluster_csv_file = 'no_cluster_dict_ws'+str(windowsize)+ '.csv'
+    print("Output files:", df_csv_file, no_cluster_csv_file)
+    df.to_csv(df_csv_file)
+    with open(no_cluster_csv_file, 'w') as csv_file:
+        writer_dict = csv.writer(csv_file)
+        for key, value in no_cluster_dict.items():
+            writer_dict.writerow([key, value])
+    return df
+    
+    
+
 if __name__=="__main__":
     #topicsli = ['American Television Series','Television Drama Series','Romantic Television Series','Sustainable Energy','Renewable Energy']
     txtFile = "textFile"
     clusterdict = getOuput(txtFile)
     print(clusterdict)
+    my_df = buildArray(txtFile, clusterdict, 3)
