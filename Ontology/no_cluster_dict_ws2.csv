@@ -1,0 +1,89 @@
+9,{}
+11,"{'Meteorology': 0.6623, 'Clouds': 0.5274, 'Meteorological phenomena': 0.5197}"
+12,{}
+13,"{'Software': 1, 'Computing': 1, 'Microsoft': 1, 'Digital media': 1, 'Information technology companies of the United States': 1, 'Technology': 0.8927, 'Information technology companies': 0.8737, 'Digital technology': 0.8309, 'Cyberspace': 0.7622, 'Computers': 0.6992, 'Intellectual works': 0.6895, 'Computer engineering': 0.6855, 'Business': 0.6643, 'Media technology': 0.6574, 'Technology companies of the United States': 0.6202, 'Computer science': 0.6173, 'Computer-related introductions': 0.6045, 'Information technology': 0.5971, 'Communication': 0.5622, 'Software companies of the United States': 0.5549, 'Foreign trade of the United States': 0.5449, 'Computer companies': 0.5394, 'Application software': 0.5224, 'Electronic publishing': 0.5046}"
+14,"{'Communication': 0.8514, 'Technology': 0.8302, 'Telecommunications': 0.7783, 'Wireless': 0.6611, 'Electronics': 0.5707, 'Computing': 0.5427}"
+15,"{'Broadcasting': 1, 'Television': 1, 'Public broadcasting': 1, 'Mass media': 1, 'Public Broadcasting Service': 1, 'Educational television': 1, 'Public television': 1, 'Corporation for Public Broadcasting': 1, 'Public sphere': 1, 'Public sector': 1, 'Public services': 1, 'Media formats': 1, 'Government': 0.9556, 'Television networks': 0.9225, 'Broadcasting stations and networks': 0.8992, 'Educational broadcasting': 0.8863, 'American television networks': 0.8641, 'Television broadcasting companies': 0.8144, 'Broadcasting companies of the United States': 0.8113, 'Public administration': 0.8099, 'Communication': 0.7964, 'Television companies': 0.739, 'Government corporations': 0.6715, 'Technology': 0.6553, 'Telecommunications': 0.6375, 'Economy of the United States': 0.6221, 'Government of the United States': 0.6168, 'Media companies of the United States': 0.6127, 'Radio': 0.563, 'United States': 0.5592, 'Media companies of North America': 0.5368, 'Corporations chartered': 0.53, 'Media technology': 0.5041}"
+20,"{'Machine guns': 0.7073, 'Automatic weapons': 0.6577, 'Weapons': 0.6495, 'Firearm actions': 0.618, 'Firearms': 0.5977, 'Projectile weapons': 0.588, 'Weapon design': 0.5828, 'Firearm components': 0.5587, 'Projectiles': 0.5555, 'Technology': 0.5276, 'Machines': 0.5018}"
+23,{}
+24,{}
+26,{}
+31,"{'Secondary sexual characteristics': 0.8902, 'Breast': 0.873, 'Human Behavior and Evolution Society': 0.8246, 'Medical Subject Headings': 0.7762, 'Gynaecology': 0.7249, 'Mammal female reproductive system': 0.6476, 'Organs (anatomy)': 0.6224, ""Women's health"": 0.6195, 'Human anatomy': 0.5572, 'Animal reproductive system': 0.5257}"
+35,{'Richthofen family': 0.9274}
+36,{}
+37,"{'Birds of prey': 0.6156, 'Eagles': 0.5744}"
+43,{}
+49,{}
+50,{}
+51,{}
+52,{}
+59,{}
+64,{}
+70,{}
+74,{}
+76,{}
+77,{}
+78,"{'Philosophy': 0.647, 'Ethics': 0.6051, 'Culture': 0.5146}"
+80,{}
+81,{}
+85,{}
+94,"{'Attention': 0.6551, 'Cognition': 0.5909, 'Psychological concepts': 0.5479, 'Neuropsychological assessment': 0.5165}"
+97,"{'Mid-air collisions': 0.6767, 'Aircraft collisions': 0.6363, 'Aviation accidents and incidents': 0.5905, 'Transport accidents and incidents': 0.5607, 'Aviation safety': 0.5552}"
+100,{}
+103,{}
+104,{}
+105,{'Richthofen family': 0.894}
+106,{}
+109,"{'Art media': 0.6171, 'Visual arts': 0.5617, 'Vision': 0.5489}"
+110,{}
+111,{}
+112,{}
+116,{}
+117,{}
+119,{}
+120,{}
+123,{}
+124,{}
+129,{}
+130,"{'Diseases and disorders': 1, 'Medicine': 1, 'Clinical medicine': 1, 'Nervous system': 1, 'Health': 1, 'Medical specialties': 1, 'Psychiatric diagnosis': 1, 'Medical diagnosis': 1, 'Neuroscience': 1, 'Injuries': 0.976, 'Psychiatry': 0.9747, 'Traumatology': 0.9433, 'Behavioural sciences': 0.9425, 'Psychology': 0.8932, 'Accidents': 0.8537, 'Mental health': 0.822, 'Neurosurgery': 0.8127, 'Neurotrauma': 0.8026, 'Human diseases and disorders': 0.8005, 'Neurological disorders': 0.7665, 'Emergency medicine': 0.761, 'Causes of death': 0.7482, 'Headaches': 0.7412, 'Symptoms and signs: General': 0.7023, 'Symptoms and signs: Nervous system': 0.6866, 'Neurology': 0.6805, 'Positive psychology': 0.6715, 'Pain': 0.6526, 'Social constructionism': 0.6427, 'Mental and behavioural disorders': 0.6378, 'Episodic and paroxysmal disorders': 0.6333, 'Cognition': 0.6248, 'Symptoms and signs': 0.6053, 'Psychiatry-related fields': 0.5943, 'Abnormal psychology': 0.5902, 'Clinical psychology': 0.5711, 'Psychiatric assessment': 0.5103}"
+131,{}
+133,{}
+142,{}
+143,{}
+146,{}
+147,{}
+150,{}
+152,{}
+153,{}
+154,{}
+155,{}
+156,{}
+159,{}
+162,{}
+163,{}
+164,{}
+165,"{'Psychology': 0.9687, 'Clinical psychology': 0.9174, 'Behavioural sciences': 0.9135, 'Mental health': 0.8058, 'Psychiatry-related fields': 0.8027, 'Abnormal psychology': 0.7943, 'Health': 0.7278, 'Psychological concepts': 0.6962, 'Psychiatry': 0.6762, 'Neuroscience': 0.6656, 'Stress': 0.632, 'Applied psychology': 0.5817, 'Cognition': 0.548, 'Human homeostasis': 0.5396, 'Emotion': 0.5272, 'Psychiatric diagnosis': 0.5214, 'Mental and behavioural disorders': 0.5152}"
+166,{}
+167,{'Richthofen': 0.5042}
+170,{}
+176,{}
+177,{}
+178,{}
+180,{}
+183,{}
+185,{}
+186,{}
+187,{}
+188,{}
+189,{}
+190,{}
+191,"{'Tools': 1, 'Military technology': 1, 'Dynamics (mechanics)': 1, 'Projectiles': 1, 'Ammunition': 1, 'Firearms': 1, 'Weapons': 1, 'Projectile weapons': 1, 'flight': 1, 'Ballistics': 1, 'Artillery': 1, 'Hazards': 1, 'Applied and interdisciplinary physics': 1, 'Hydrostatic shock (firearms)': 0.8983, 'Physical phenomena': 0.8827, 'Motion (physics)': 0.7723, 'Physics': 0.6951, 'Solid mechanics': 0.6752, 'Mechanics': 0.6726, 'Force': 0.6059, 'Military equipment': 0.5688, 'Bullet': 0.5485}"
+192,"{'Projectiles': 0.7316, 'Ammunition': 0.6423, 'Projectile weapons': 0.6353, 'Weapons': 0.6308, 'Firearms': 0.6051}"
+193,{}
+194,{}
+196,{}
+197,{}
+201,"{'Culture': 0.8749, 'Epistemology': 0.8311, 'Evidence law': 0.7798, 'Legal procedure': 0.7558, 'Evidence': 0.7285, 'Common law': 0.7146, 'Witness': 0.6769, 'Justice': 0.6678, 'Justification': 0.6581, 'Law': 0.6337, 'Judiciaries': 0.6178, 'Public law': 0.5638, 'Social institutions': 0.5263}"
+202,{}
+205,{}
+206,{}
