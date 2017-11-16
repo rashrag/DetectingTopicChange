@@ -205,38 +205,38 @@
 306,{}
 307,{}
 308,{}
-309,{}
-310,"{'Individual bells': 0.6287, 'Bell towers': 0.5943, 'Bells (instrument)': 0.5643, 'Towers': 0.5378, 'Percussion vessels': 0.5142}"
+309,"{'Individual bells': 0.6287, 'Bell towers': 0.5943, 'Bells (instrument)': 0.5643, 'Towers': 0.5378, 'Percussion vessels': 0.5142}"
+310,{}
 311,{}
 312,{}
-313,{}
+315,{}
 316,{}
 317,{}
-318,{}
+319,{}
 320,{}
-321,{}
+322,{}
 323,{}
 324,{}
 325,{}
 326,{}
 327,{}
 328,{}
-329,{}
-330,"{'Stress': 1, 'Human homeostasis': 1, 'Motivation': 1, 'Industrial and organizational psychology': 1, 'Abnormal psychology': 0.9872, 'Clinical psychology': 0.9615, 'Emotion': 0.96, 'Behavioural sciences': 0.9592, 'Psychiatry-related fields': 0.9321, 'Working conditions': 0.88, 'Mental health': 0.8764, 'Health': 0.8502, 'Psychology': 0.85, 'Psychiatry': 0.8468, 'Determinants of health': 0.8456, 'Psychological concepts': 0.7253, 'Applied psychology': 0.6848, 'Cognition': 0.6205, 'Action (philosophy)': 0.5972, 'Limbic system': 0.5819, 'Systems psychology': 0.5657, 'Neuroscience': 0.5574, 'Experimental psychology': 0.5327, 'Medical specialties': 0.5104, 'Organizational behavior': 0.5055}"
+329,"{'Stress': 1, 'Human homeostasis': 1, 'Motivation': 1, 'Industrial and organizational psychology': 1, 'Abnormal psychology': 0.9872, 'Clinical psychology': 0.9615, 'Emotion': 0.96, 'Behavioural sciences': 0.9592, 'Psychiatry-related fields': 0.9321, 'Working conditions': 0.88, 'Mental health': 0.8764, 'Health': 0.8502, 'Psychology': 0.85, 'Psychiatry': 0.8468, 'Determinants of health': 0.8456, 'Psychological concepts': 0.7253, 'Applied psychology': 0.6848, 'Cognition': 0.6205, 'Action (philosophy)': 0.5972, 'Limbic system': 0.5819, 'Systems psychology': 0.5657, 'Neuroscience': 0.5574, 'Experimental psychology': 0.5327, 'Medical specialties': 0.5104, 'Organizational behavior': 0.5055}"
+330,{}
 331,{}
-332,{}
-333,{'Richthofen family': 0.7069}
-334,{}
+332,{'Richthofen family': 0.7069}
+333,{}
+335,{}
 336,{}
 337,{}
 338,{}
-339,{}
-340,{'Medicine': 0.5957}
-341,"{'Secondary sexual characteristics': 0.8325, 'Human Behavior and Evolution Society': 0.7846, 'Medical Subject Headings': 0.7727, 'Breast': 0.765, 'Organs (anatomy)': 0.7342, 'Mammal female reproductive system': 0.6099, 'Emergency medicine': 0.5969, 'Animal anatomy': 0.585, 'Gynaecology': 0.576, 'Medical specialties': 0.502}"
+339,{'Medicine': 0.5957}
+340,"{'Secondary sexual characteristics': 0.8325, 'Human Behavior and Evolution Society': 0.7846, 'Medical Subject Headings': 0.7727, 'Breast': 0.765, 'Organs (anatomy)': 0.7342, 'Mammal female reproductive system': 0.6099, 'Emergency medicine': 0.5969, 'Animal anatomy': 0.585, 'Gynaecology': 0.576, 'Medical specialties': 0.502}"
+341,{}
 342,{}
-343,{}
-345,"{'Pathology': 1, 'Clinical medicine': 1, 'Medical specialties': 1, 'Medicine': 1, 'Health sciences': 1, 'Health': 1, 'Life sciences': 1, 'Biology': 1, 'Health care': 0.9767, 'Organisms': 0.8821, 'Natural sciences': 0.8593}"
-347,{}
+344,"{'Pathology': 1, 'Clinical medicine': 1, 'Medical specialties': 1, 'Medicine': 1, 'Health sciences': 1, 'Health': 1, 'Life sciences': 1, 'Biology': 1, 'Health care': 0.9767, 'Organisms': 0.8821, 'Natural sciences': 0.8593}"
+346,{}
+348,{}
 349,{}
 350,{}
 351,{}
@@ -245,7 +245,7 @@
 354,{}
 355,{}
 356,{}
-357,{}
+358,{}
 359,{}
 360,{}
 361,{}
@@ -254,7 +254,7 @@
 364,{}
 365,{}
 366,{}
-367,{}
+368,{}
 369,{}
 370,{}
 371,{}
@@ -266,29 +266,28 @@
 377,{}
 378,{}
 379,{}
-380,{}
-382,"{'Projectiles': 0.6971, 'flight': 0.6961, 'Ballistics': 0.6529, 'Motion (physics)': 0.6188, 'Applied and interdisciplinary physics': 0.6059, 'Ammunition': 0.5992, 'Artillery': 0.5882, 'Firearms': 0.559, 'Dynamics (mechanics)': 0.5549, 'Mechanics': 0.5517, 'Physical phenomena': 0.5439, 'Hazards': 0.5289, 'Physics': 0.5009}"
-383,"{'Ammunition': 0.675, 'Projectiles': 0.6609, 'Firearms': 0.6138, 'Weapons': 0.6128, 'Projectile weapons': 0.5708}"
+381,"{'Projectiles': 0.6971, 'flight': 0.6961, 'Ballistics': 0.6529, 'Motion (physics)': 0.6188, 'Applied and interdisciplinary physics': 0.6059, 'Ammunition': 0.5992, 'Artillery': 0.5882, 'Firearms': 0.559, 'Dynamics (mechanics)': 0.5549, 'Mechanics': 0.5517, 'Physical phenomena': 0.5439, 'Hazards': 0.5289, 'Physics': 0.5009}"
+382,"{'Ammunition': 0.675, 'Projectiles': 0.6609, 'Firearms': 0.6138, 'Weapons': 0.6128, 'Projectile weapons': 0.5708}"
+383,{}
 384,{}
 385,{}
 386,{}
 387,{}
 388,{}
-389,{}
+390,{}
 391,{}
 392,{}
 393,{}
-394,{}
+395,{}
 396,{}
-397,{}
-400,{'Richthofen family': 0.6989}
-401,{}
-402,"{'Evidence law': 1, 'Evidence': 1, 'Legal procedure': 1, 'Common law': 1, 'Epistemology': 0.9874, 'Justice': 0.9637, 'Judiciaries': 0.9585, 'Justification': 0.9197, 'Law': 0.9116, 'Public law': 0.8489, 'Government information': 0.7483, 'Witness': 0.7301, 'Social institutions': 0.6996, 'Culture': 0.6854, 'Empiricism': 0.6712, 'Virtue': 0.6554, 'Morality': 0.6376, 'Comparative law': 0.627, 'Jurisprudence': 0.626, 'Government': 0.5969, 'Epistemology of science': 0.5899, 'Ethical principles': 0.5899, 'Separation of powers': 0.5814, 'Politics': 0.5383}"
+399,{'Richthofen family': 0.6989}
+400,{}
+401,"{'Evidence law': 1, 'Evidence': 1, 'Legal procedure': 1, 'Common law': 1, 'Epistemology': 0.9874, 'Justice': 0.9637, 'Judiciaries': 0.9585, 'Justification': 0.9197, 'Law': 0.9116, 'Public law': 0.8489, 'Government information': 0.7483, 'Witness': 0.7301, 'Social institutions': 0.6996, 'Culture': 0.6854, 'Empiricism': 0.6712, 'Virtue': 0.6554, 'Morality': 0.6376, 'Comparative law': 0.627, 'Jurisprudence': 0.626, 'Government': 0.5969, 'Epistemology of science': 0.5899, 'Ethical principles': 0.5899, 'Separation of powers': 0.5814, 'Politics': 0.5383}"
+402,{}
 403,{}
 404,{}
-405,{}
+407,{}
 408,{}
 409,{}
 410,{}
 411,{}
-412,{}

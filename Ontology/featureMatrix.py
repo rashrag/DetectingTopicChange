@@ -132,7 +132,15 @@ def buildArray(txtFile, clusterdict,windowsize):
             writer_dict.writerow([key, value])
     return df
     
-    
+def hardMax(df):
+    df_max = pd.DataFrame(0, columns=df.columns, index=df.index)
+
+    for column in df_max:
+        index = df[column].idxmax()
+        if df.loc[index,column]!=0:
+            df_max.loc[index,column] = 1
+    return df_max
+        
 
 if __name__=="__main__":
     #topicsli = ['American Television Series','Television Drama Series','Romantic Television Series','Sustainable Energy','Renewable Energy']
@@ -140,3 +148,5 @@ if __name__=="__main__":
     clusterdict = getOuput(txtFile)
     print(clusterdict)
     my_df = buildArray(txtFile, clusterdict, 3)
+    max_df = hardMax(my_df)
+    
