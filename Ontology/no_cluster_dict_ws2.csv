@@ -45,7 +45,7 @@
 123,{}
 124,{}
 129,{}
-130,"{'Diseases and disorders': 1, 'Medicine': 1, 'Clinical medicine': 1, 'Nervous system': 1, 'Health': 1, 'Medical specialties': 1, 'Psychiatric diagnosis': 1, 'Medical diagnosis': 1, 'Neuroscience': 1, 'Injuries': 0.976, 'Psychiatry': 0.9747, 'Traumatology': 0.9433, 'Behavioural sciences': 0.9425, 'Psychology': 0.8932, 'Accidents': 0.8537, 'Mental health': 0.822, 'Neurosurgery': 0.8127, 'Neurotrauma': 0.8026, 'Human diseases and disorders': 0.8005, 'Neurological disorders': 0.7665, 'Emergency medicine': 0.761, 'Causes of death': 0.7482, 'Headaches': 0.7412, 'Symptoms and signs: General': 0.7023, 'Symptoms and signs: Nervous system': 0.6866, 'Neurology': 0.6805, 'Positive psychology': 0.6715, 'Pain': 0.6526, 'Social constructionism': 0.6427, 'Mental and behavioural disorders': 0.6378, 'Episodic and paroxysmal disorders': 0.6333, 'Cognition': 0.6248, 'Symptoms and signs': 0.6053, 'Psychiatry-related fields': 0.5943, 'Abnormal psychology': 0.5902, 'Clinical psychology': 0.5711, 'Psychiatric assessment': 0.5103}"
+130,"{'Diseases and disorders': 1, 'Clinical medicine': 1, 'Health': 1, 'Medical specialties': 1, 'Nervous system': 1, 'Medicine': 1, 'Psychiatric diagnosis': 1, 'Medical diagnosis': 1, 'Neuroscience': 1, 'Injuries': 0.976, 'Psychiatry': 0.9747, 'Traumatology': 0.9433, 'Behavioural sciences': 0.9425, 'Psychology': 0.8932, 'Accidents': 0.8537, 'Mental health': 0.822, 'Neurosurgery': 0.8127, 'Neurotrauma': 0.8026, 'Human diseases and disorders': 0.8005, 'Neurological disorders': 0.7665, 'Emergency medicine': 0.761, 'Causes of death': 0.7482, 'Headaches': 0.7412, 'Symptoms and signs: General': 0.7023, 'Symptoms and signs: Nervous system': 0.6866, 'Neurology': 0.6805, 'Positive psychology': 0.6715, 'Pain': 0.6526, 'Social constructionism': 0.6427, 'Mental and behavioural disorders': 0.6378, 'Episodic and paroxysmal disorders': 0.6333, 'Cognition': 0.6248, 'Symptoms and signs': 0.6053, 'Psychiatry-related fields': 0.5943, 'Abnormal psychology': 0.5902, 'Clinical psychology': 0.5711, 'Psychiatric assessment': 0.5103}"
 131,{}
 133,{}
 142,{}
@@ -68,22 +68,21 @@
 170,{}
 176,{}
 177,{}
-178,{}
-180,{}
-183,{}
+179,{}
+182,{}
+184,{}
 185,{}
 186,{}
 187,{}
 188,{}
 189,{}
-190,{}
-191,"{'Tools': 1, 'Military technology': 1, 'Dynamics (mechanics)': 1, 'Projectiles': 1, 'Ammunition': 1, 'Firearms': 1, 'Weapons': 1, 'Projectile weapons': 1, 'flight': 1, 'Ballistics': 1, 'Artillery': 1, 'Hazards': 1, 'Applied and interdisciplinary physics': 1, 'Hydrostatic shock (firearms)': 0.8983, 'Physical phenomena': 0.8827, 'Motion (physics)': 0.7723, 'Physics': 0.6951, 'Solid mechanics': 0.6752, 'Mechanics': 0.6726, 'Force': 0.6059, 'Military equipment': 0.5688, 'Bullet': 0.5485}"
-192,"{'Projectiles': 0.7316, 'Ammunition': 0.6423, 'Projectile weapons': 0.6353, 'Weapons': 0.6308, 'Firearms': 0.6051}"
+190,"{'Tools': 1, 'Military technology': 1, 'Dynamics (mechanics)': 1, 'Projectiles': 1, 'Ammunition': 1, 'Firearms': 1, 'Weapons': 1, 'Projectile weapons': 1, 'flight': 1, 'Ballistics': 1, 'Artillery': 1, 'Hazards': 1, 'Applied and interdisciplinary physics': 1, 'Hydrostatic shock (firearms)': 0.8983, 'Physical phenomena': 0.8827, 'Motion (physics)': 0.7723, 'Physics': 0.6951, 'Solid mechanics': 0.6752, 'Mechanics': 0.6726, 'Force': 0.6059, 'Military equipment': 0.5688, 'Bullet': 0.5485}"
+191,"{'Projectiles': 0.7316, 'Ammunition': 0.6423, 'Projectile weapons': 0.6353, 'Weapons': 0.6308, 'Firearms': 0.6051}"
+192,{}
 193,{}
-194,{}
+195,{}
 196,{}
-197,{}
-201,"{'Culture': 0.8749, 'Epistemology': 0.8311, 'Evidence law': 0.7798, 'Legal procedure': 0.7558, 'Evidence': 0.7285, 'Common law': 0.7146, 'Witness': 0.6769, 'Justice': 0.6678, 'Justification': 0.6581, 'Law': 0.6337, 'Judiciaries': 0.6178, 'Public law': 0.5638, 'Social institutions': 0.5263}"
-202,{}
+200,"{'Culture': 0.8749, 'Epistemology': 0.8311, 'Evidence law': 0.7798, 'Legal procedure': 0.7558, 'Evidence': 0.7285, 'Common law': 0.7146, 'Witness': 0.6769, 'Justice': 0.6678, 'Justification': 0.6581, 'Law': 0.6337, 'Judiciaries': 0.6178, 'Public law': 0.5638, 'Social institutions': 0.5263}"
+201,{}
+204,{}
 205,{}
-206,{}

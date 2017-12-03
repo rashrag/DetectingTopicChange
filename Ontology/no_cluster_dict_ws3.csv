@@ -1,0 +1,41 @@
+8,{}
+9,"{'Software': 1, 'Computing': 1, 'Microsoft': 1, 'Digital media': 1, 'Information technology companies of the United States': 1, 'Information technology companies': 0.8989, 'Technology': 0.8977, 'Digital technology': 0.8302, 'Cyberspace': 0.7644, 'Computers': 0.7145, 'Computer engineering': 0.696, 'Intellectual works': 0.6938, 'Business': 0.685, 'Media technology': 0.6577, 'Technology companies of the United States': 0.6328, 'Computer science': 0.6256, 'Computer-related introductions': 0.6197, 'Information technology': 0.6018, 'Computer companies': 0.5644, 'Software companies of the United States': 0.5633, 'Communication': 0.5629, 'Foreign trade of the United States': 0.5582, 'Application software': 0.5335, 'Computer industry': 0.5126}"
+10,"{'Public broadcasting': 1, 'Digital technology': 1, 'Corporation for Public Broadcasting': 1, 'Public sphere': 1, 'Media formats': 1, 'Public television': 1, 'Educational television': 1, 'Public Broadcasting Service': 1, 'Technology': 1, 'Communication': 1, 'Telecommunications': 1, 'Mass media': 1, 'Television': 1, 'Broadcasting': 1, 'Wireless': 1, 'Public services': 0.9506, 'Networks': 0.9264, 'Public sector': 0.9013, 'Television networks': 0.8582, 'Government': 0.8298, 'American television networks': 0.8169, 'Companies': 0.7709, 'Educational broadcasting': 0.7668, 'Radio': 0.7319, 'Economy of the United States': 0.7242, 'Broadcasting companies of the United States': 0.6997, 'Public administration': 0.6904, 'Service industries': 0.6881, 'Electronics': 0.6864, 'Television broadcasting companies': 0.6844, 'Broadcasting stations and networks': 0.6721, 'Media technology': 0.6643, 'Sprint Corporation': 0.6366, 'PBS': 0.6147, 'Industries': 0.5795, 'Peabody Award': 0.5753, 'Information Age': 0.5562, 'Television companies': 0.5473, 'Economy of Overland Park, Kansas': 0.5471, 'Government corporations': 0.5355, 'Public opinion': 0.5337, 'Computer networking': 0.5305, 'Entertainment': 0.5252, 'SoftBank': 0.5191, 'Government of the United States': 0.5118, 'Television broadcasting companies of the United States': 0.508, 'Consumer electronics': 0.5071, 'Telecommunications engineering': 0.5048, 'Web award winners': 0.5042}"
+16,{}
+24,{}
+34,{}
+47,{}
+51,{}
+52,"{'Philosophy': 0.7366, 'Ethics': 0.6274, 'Culture': 0.6021}"
+54,{}
+57,"{'Sky': 0.6361, 'Scientific observation': 0.6086, 'Astronomy': 0.6068, 'Observational astronomy': 0.5632}"
+69,{}
+70,{'Richthofen family': 0.6415}
+73,{}
+74,{}
+78,{}
+80,{}
+82,{}
+83,"{'Athletic sports': 1, 'Professional wrestling moves': 1, 'Professional wrestling': 1, 'Individual sports': 1, 'Wrestling': 1, 'Combat sports': 1, 'Martial arts': 1, 'Mock combat': 0.7765, 'Choreographed combat': 0.7167}"
+85,{}
+87,"{'Diseases and disorders': 1, 'Clinical medicine': 1, 'Health': 1, 'Medical specialties': 1, 'Nervous system': 1, 'Medicine': 1, 'Neuroscience': 1, 'Psychiatric diagnosis': 1, 'Medical diagnosis': 1, 'Behavioural sciences': 1, 'Psychology': 0.9846, 'Psychiatry': 0.9763, 'Injuries': 0.9394, 'Traumatology': 0.9073, 'Human diseases and disorders': 0.8577, 'Mental health': 0.8308, 'Accidents': 0.8201, 'Neurosurgery': 0.7814, 'Causes of death': 0.7719, 'Neurotrauma': 0.7691, 'Neurological disorders': 0.755, 'Emergency medicine': 0.7382, 'Headaches': 0.6828, 'Positive psychology': 0.6786, 'Neurology': 0.6727, 'Social constructionism': 0.6511, 'Symptoms and signs: General': 0.6502, 'Symptoms and signs: Nervous system': 0.635, 'Mental and behavioural disorders': 0.6344, 'Cognition': 0.6284, 'Psychiatry-related fields': 0.6204, 'Pain': 0.6082, 'Clinical psychology': 0.608, 'Abnormal psychology': 0.5952, 'Episodic and paroxysmal disorders': 0.5907, 'Symptoms and signs': 0.572, 'Epidemiology': 0.5362, 'Psychiatric assessment': 0.5131}"
+89,{}
+95,{}
+98,{}
+102,{}
+108,{}
+109,{}
+110,"{'Clinical psychology': 0.8269, 'Psychology': 0.7763, 'Neuroscience': 0.7477, 'Psychological concepts': 0.7428, 'Behavioural sciences': 0.717, 'Cognition': 0.6282, 'Health': 0.6206, 'Medical specialties': 0.618, 'Psychiatry-related fields': 0.6164, 'Abnormal psychology': 0.6149, 'Nervous system': 0.6069, 'Mental health': 0.5958, 'Clinical medicine': 0.5842, 'Vision': 0.5479, 'Medicine': 0.5358, 'Psychiatry': 0.525, 'Visual system': 0.5243, 'Stress': 0.5093}"
+115,"{'Pathology': 1, 'Clinical medicine': 1, 'Medical specialties': 1, 'Medicine': 1, 'Health': 0.9214, 'Health sciences': 0.8772, 'Health care': 0.7846, 'Life sciences': 0.7059, 'Biology': 0.6807, 'Organisms': 0.5743, 'Natural sciences': 0.5625}"
+117,{}
+118,{}
+119,{}
+122,{}
+124,{}
+125,{}
+127,"{'Weapons': 1, 'Projectile weapons': 1, 'Projectiles': 0.8447, 'Ammunition': 0.7849, 'Firearms': 0.738, 'Military technology': 0.7278, 'Hazards': 0.651, 'Bullet': 0.5131}"
+128,"{'Dynamics (mechanics)': 1, 'Projectiles': 1, 'Ammunition': 1, 'Firearms': 1, 'flight': 1, 'Weapons': 1, 'Ballistics': 1, 'Projectile weapons': 1, 'Artillery': 1, 'Hazards': 1, 'Applied and interdisciplinary physics': 1, 'Military technology': 0.969, 'Tools': 0.955, 'Hydrostatic shock (firearms)': 0.9542, 'Physical phenomena': 0.8975, 'Motion (physics)': 0.7681, 'Mechanics': 0.709, 'Physics': 0.6964, 'Solid mechanics': 0.6703, 'Force': 0.6073}"
+129,{}
+131,{}
+134,"{'Culture': 0.7207, 'Evidence law': 0.6719, 'Epistemology': 0.6594, 'Legal procedure': 0.6261, 'Evidence': 0.6259, 'Witness': 0.6137, 'Common law': 0.5886, 'Justice': 0.5604, 'Justification': 0.5502, 'Law': 0.5294, 'Judiciaries': 0.5038}"
+135,{}
