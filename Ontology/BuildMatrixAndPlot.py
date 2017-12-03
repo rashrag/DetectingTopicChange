@@ -132,8 +132,8 @@ def buildArray(txtFile, clusterdict,windowsize):
             #print("i = ", i)
             print(e)
             continue
-    df_csv_file = 'output_ws'+str(windowsize)+ '.csv'
-    no_cluster_csv_file = 'no_cluster_dict_ws'+str(windowsize)+ '.csv'
+    df_csv_file = 'nooutput/output_ws'+str(windowsize)+ '.csv'
+    no_cluster_csv_file = 'clusterout/no_cluster_dict_ws'+str(windowsize)+ '.csv'
     print("Output files:", df_csv_file, no_cluster_csv_file)
     df.to_csv(df_csv_file)
     with open(no_cluster_csv_file, 'w') as csv_file:
@@ -169,8 +169,10 @@ winsize = 5
 num_words = 20 # This will be used for splitter function in buildArray function
 inputFile = 'textFile'
 #Pass the exemplars here as phrase Dictionary
-
-phraseDict1 ={'Roy Brown (RAF officer)' : ['Roy Brown (RAF officer)'],
+import featureMatrix as fm
+phraseDict1 = fm.getOuput(inputFile)
+'''    
+{'Roy Brown (RAF officer)' : ['Roy Brown (RAF officer)'],
 'Jagdstaffel' : ['Jagdstaffel', 'Dogfight', 'Fighter aircraft', 'Bloody April', 'Luftstreitkräfte', 'Jagdstaffel 2', 'Warfare', 'Trench warfare', 'Sopwith Camel', 'War', 'World War I', 'Lanoe Hawker', 'Aeronautics', 'Jagdstaffel 11', 'Royal Flying Corps', 'Battle of the Somme', 'Sopwith Aviation Company', 'Aircraft', 'Aerial warfare', 'Combat', 'National security', 'Aerospace engineering', 'Triplane', 'Nazi Germany', 'Violent conflict', 'Conflicts', 'Battle', 'Aircraft pilot', 'Luftwaffe'],
 'Jagdgeschwader 1 (World War I)' : ['Jagdgeschwader 1 (World War I)'],
 'Military' : ['Manfred von Richthofen', 'Oswald Boelcke', 'Flying ace', 'Synchronization gear', 'Max Immelmann', 'Cedric Popkin', 'Military forces', 'Military science', 'Military aviation', 'Military', 'Aviation', 'Cavalry', 'Airplane', 'Roland Georges Garros', 'International security', 'Battle of Vimy Ridge', 'Propeller (aeronautics)', 'Reconnaissance', 'Military organization', 'Artillery', 'Allies of World War II', 'Military operations', 'Flight', 'Verdun', 'Albatros D.II'],
@@ -178,7 +180,7 @@ phraseDict1 ={'Roy Brown (RAF officer)' : ['Roy Brown (RAF officer)'],
 'Air supremacy' : ['Air force', 'Royal Air Force', 'Air forces', 'Air supremacy'],
 'No. 209 Squadron RAF' : ['No. 209 Squadron RAF']
 }
-
+'''
 #Change the textfile name
 # Execute buildArray function
 my_df_array = buildArray(inputFile, phraseDict1, winsize)
