@@ -36,7 +36,7 @@ def get_top_relevant_topics(response, thresh_score):
 def getTopics(fileName):
     rashkey = "cc9e748f39591c90171653b1ded93c6bd2b8a3da262b3a116aa6524d"
     outPutFileName = fileName
-    client = TextRazor( "fdd39e9dde7d84983bbe964c514035f3c483d7df5996f62541ef76bc",
+    client = TextRazor( "cc9e748f39591c90171653b1ded93c6bd2b8a3da262b3a116aa6524d",
                        extractors=["topics"])
     with open(fileName, 'r') as content_file:
         content = content_file.read()
@@ -116,7 +116,7 @@ def buildArray(txtFile, clusterdict,windowsize):
 
         except (HTTPError, TextRazorAnalysisException) as e:
             print("Error on " ,textrazor_key)
-            textrazor_key = "fdd39e9dde7d84983bbe964c514035f3c483d7df5996f62541ef76bc"#"324337f35ea1876aae377a6f1191ab5a5b9aaced32f9a4e3634e74c5"
+            textrazor_key = "324337f35ea1876aae377a6f1191ab5a5b9aaced32f9a4e3634e74c5"
             print("i = ", i)
             #i = i - windowsize
             #print("i = ", i)
@@ -139,4 +139,4 @@ if __name__=="__main__":
     txtFile = "textFile"
     clusterdict = getOuput(txtFile)
     print(clusterdict)
-    my_df = buildArray(txtFile, clusterdict, 3)
+    #my_df = buildArray(txtFile, clusterdict, 3)

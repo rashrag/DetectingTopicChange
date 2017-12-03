@@ -1,0 +1,37 @@
+Speech to text:
+
+Manfred von Richthofen : ['Manfred von Richthofen']
+Roy Brown (RAF officer) : ['Roy Brown (RAF officer)']
+Military : ['Synchronization gear', 'Fighter aircraft', 'Military', 'Military forces', 'Military aviation', 'Military science', 'Aviation', 'Sopwith Camel', 'Aeronautics', 'Aircraft', 'Bloody April', 'Military operations', 'Conflicts', 'Luftstreitkräfte', 'Triplane', 'Artillery', 'Propeller', 'Reconnaissance', 'Military technology']
+War : ['Warfare', 'War', 'World War I', 'Dogfight', 'Flying ace', 'Trench warfare', 'Airplane', 'Combat', 'Aerospace engineering', 'Cavalry', 'Air force']
+Jagdgeschwader 1 (World War I) : ['Jagdgeschwader 1 (World War I)']
+International security : ['International security', 'National security']
+Anthony Fokker : ['Anthony Fokker', 'Fokker Dr.I']
+Roland Georges Garros : ['Roland Georges Garros']
+Violent conflict : ['Violent conflict']
+Nazi Germany : ['Nazi Germany']
+Royal Aircraft Factory S.E.5 : ['Royal Aircraft Factory S.E.5']
+Allies of World War II : ['Allies of World War II']
+
+==========================================================================
+Clean Transcript Text:
+
+
+Roy Brown (RAF officer) : 	'Roy Brown (RAF officer)']																																						
+Jagdstaffel : 	'Oswald Boelcke'	 'Jagdstaffel'	 'Jagdgeschwader 1 (World War I)'	 'Bloody April'	 'Luftstreitkräfte'	 'Aviation'	 'Warfare'	 'World War I'	 'War'	 'Aeronautics'	 'Fokker Dr.I'	 'Anthony Fokker'	 'Trench warfare'	 'Aircraft'	 'Jagdstaffel 2'	 'International security'	 'Lanoe Hawker'	 'National security'	 'Aerial warfare'	 'Cavalry'	 'Royal Flying Corps'	 'Jagdstaffel 11'	 'Violent conflict']																
+Military : 	'Manfred von Richthofen'	 'Fighter aircraft'	 'Dogfight'	 'Synchronization gear'	 'Flying ace'	 'Military aviation'	 'Military forces'	 'Military science'	 'Military'	 'Max Immelmann'	 'Sopwith Camel'	 'Aerospace engineering'	 'Combat'	 'Airplane'	 'Conflicts'	 'Military operations'	 'Sopwith Aviation Company'	 'Military organization'	 'Triplane'	 'Reconnaissance']																			
+Air forces : 	'Air forces'	 'Air force'	 'Royal Air Force']																																				
+Imperial German Army Air Service : 	'Imperial German Army Air Service']																																						
+Army aviation units and formations : 	'Army aviation units and formations']																																						
+
+==========================================================================
+
+
+Roy Brown (RAF officer) : ['Roy Brown (RAF officer)']
+Anthony Fokker : ['Anthony Fokker', 'Fokker Dr.I', 'Fokker Eindecker fighters']
+Military : ['Fighter aircraft', 'Military science', 'Military forces', 'Military', 'Military aviation', 'Sopwith Camel', 'Jagdstaffel 2', 'Aircraft', 'Aerospace engineering', 'Military organization', 'Jagdstaffel 11', 'Sopwith Aviation Company', 'Aerial warfare', 'Conflicts', 'Military technology', 'Roland Georges Garros', 'Battle']
+War : ['Manfred von Richthofen', 'Oswald Boelcke', 'Jagdstaffel', 'Flying ace', 'Synchronization gear', 'Jagdgeschwader 1 (World War I)', 'Dogfight', 'Max Immelmann', 'Aviation', 'World War I', 'Warfare', 'Aeronautics', 'Luftstreitkräfte', 'War', 'Trench warfare', 'Bloody April', 'Airplane', 'International security', 'Cavalry', 'Combat', 'Lanoe Hawker', 'National security', 'Royal Flying Corps', 'Triplane', 'Nazi Germany', 'Reconnaissance', 'Allies of World War II', 'Violent conflict', 'Artillery']
+Air forces : ['Air forces', 'Air force', 'Royal Air Force']
+Battle of the Somme : ['Battle of the Somme']
+Imperial German Army Air Service : ['Imperial German Army Air Service']
+Army aviation units and formations : ['Army aviation units and formations']
