@@ -1,0 +1,18 @@
+5,{}
+10,"{'Propaganda': 0.6301, 'Media manipulation': 0.5896, 'Public opinion': 0.5879, 'Political communication': 0.5596, 'Communication': 0.5533, 'Politics': 0.5336}"
+12,{}
+23,"{'The Holocaust': 0.8028, 'Politics of World War II': 0.5039}"
+27,{}
+29,{}
+32,"{'Telecommunications': 1, 'Technology': 1, 'Telecommunications engineering': 1, 'Wireless': 1, 'Electronics': 1, 'Radio': 1, 'Communication': 1, 'Broadcasting': 1, 'Networks': 0.9156, 'Computing': 0.9018, 'Artificial objects': 0.8133, 'Electrical engineering': 0.7627, 'Data transmission': 0.7457, 'Digital technology': 0.6273, 'Oral communication': 0.6216, 'Telegraphy': 0.536, 'Sound production technology': 0.5183, 'Radio technology': 0.5052}"
+38,{}
+43,{}
+56,{}
+58,{}
+62,{}
+64,{}
+66,{}
+67,{}
+70,{}
+71,"{'Weapons': 1, 'Projectile weapons': 1, 'Projectiles': 0.8447, 'Ammunition': 0.7849, 'Firearms': 0.738, 'Military technology': 0.7278, 'Hazards': 0.651, 'Bullet': 0.5131}"
+73,"{'Firearms': 0.7704, 'Projectiles': 0.7242, 'Projectile weapons': 0.7111, 'Weapons': 0.6976, 'Ammunition': 0.6961}"

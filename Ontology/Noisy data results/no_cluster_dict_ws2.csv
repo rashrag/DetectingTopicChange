@@ -1,0 +1,50 @@
+7,{}
+12,"{'Earth phenomena': 0.6727, 'Astronomy': 0.5604}"
+14,"{'Culture': 0.6965, 'Crimes': 0.6638, 'Crime': 0.632, 'Criminal law': 0.5999, 'Violence': 0.5836, 'Politics': 0.5244, 'Abuse': 0.5181}"
+15,{}
+17,{}
+20,{}
+27,{}
+30,{}
+34,{}
+40,{}
+41,{}
+43,{}
+44,{}
+47,{}
+48,"{'Telecommunications engineering': 1, 'Networks': 1, 'Broadcasting': 1, 'Communication': 1, 'Telecommunications': 1, 'Electronics': 1, 'Technology': 1, 'Radio': 1, 'Wireless': 1, 'Computing': 0.9205, 'Artificial objects': 0.8918, 'Electrical engineering': 0.8499, 'Data transmission': 0.8497, 'Oral communication': 0.7581, 'Telegraphy': 0.6709, 'Digital technology': 0.6609, 'Sound production technology': 0.6036, 'Amateur radio': 0.6001, 'Semiotics': 0.5732, 'Radio technology': 0.5539, 'Second Industrial Revolution': 0.5307, 'Computer networking': 0.528, 'Military communications': 0.5153, 'Espionage': 0.5142}"
+52,{}
+54,{}
+56,{}
+57,{}
+64,{}
+65,"{'Psychology': 0.7869, 'Behavioural sciences': 0.7804, 'Psychological concepts': 0.7177, 'Cognitive science': 0.5876, 'Cognition': 0.5779, 'Neuroscience': 0.5242}"
+70,"{'Diseases and disorders': 1, 'Clinical medicine': 1, 'Health': 1, 'Nervous system': 1, 'Medical specialties': 1, 'Medicine': 1, 'Psychiatric diagnosis': 0.9874, 'Medical diagnosis': 0.9815, 'Neuroscience': 0.9674, 'Injuries': 0.9342, 'Traumatology': 0.9041, 'Psychiatry': 0.8897, 'Behavioural sciences': 0.8827, 'Psychology': 0.8328, 'Accidents': 0.8228, 'Neurotrauma': 0.7804, 'Neurosurgery': 0.7749, 'Mental health': 0.7577, 'Causes of death': 0.7299, 'Emergency medicine': 0.7268, 'Human diseases and disorders': 0.6652, 'Positive psychology': 0.6129, 'Neurological disorders': 0.6091, 'Headaches': 0.603, 'Social constructionism': 0.594, 'Cognition': 0.5877, 'Symptoms and signs: General': 0.5746, 'Symptoms and signs: Nervous system': 0.5584, 'Pain': 0.5383, 'Neurology': 0.523, 'Mental and behavioural disorders': 0.5169, 'Episodic and paroxysmal disorders': 0.5146, 'Symptoms and signs': 0.5039, 'Psychiatry-related fields': 0.5028, 'Concussion': 0.5011}"
+72,{}
+77,{}
+78,{}
+80,{}
+82,{}
+83,{}
+84,{}
+85,"{'Ships': 1, 'Boats': 1, 'Watercraft': 0.9308, 'Shipbuilding': 0.8153, 'Water transport': 0.7289, 'Shipping': 0.5676, 'Marine engineering': 0.5234}"
+86,{}
+87,{}
+89,{}
+93,{}
+96,"{'Stalinism-era scholars and writers': 0.7759, 'Aviation writers': 0.7346, 'British military writers': 0.6986, 'People from Bexhill-on-Sea': 0.6668, 'Military air services': 0.6131, 'British non-fiction literature': 0.6102, 'Aviation educators': 0.5692, 'Military writers': 0.5324, 'British non-fiction writers': 0.5161, 'British writers': 0.501}"
+97,"{'Software': 0.9893, 'Mobile software': 0.8927, 'Mobile computers': 0.8171, 'Mobile phones': 0.7286, 'Smartphones': 0.6833, 'Computing': 0.623, 'Digital media': 0.5853, 'System software': 0.5458, 'Technology': 0.5373, 'Computer-related introductions': 0.5354, 'Online services': 0.5232, 'Proprietary software': 0.5231, 'Operating system families': 0.5062}"
+99,{}
+100,{}
+101,{}
+102,{}
+103,{}
+104,{}
+105,{}
+106,"{'Weapons': 1, 'Projectile weapons': 1, 'Projectiles': 0.8447, 'Ammunition': 0.7849, 'Firearms': 0.738, 'Military technology': 0.7278, 'Hazards': 0.651, 'Bullet': 0.5131}"
+107,{}
+108,"{'Health': 0.7553, 'Medicine': 0.7461, 'Health sciences': 0.5626, 'Health care': 0.518}"
+109,"{'Ammunition': 0.7409, 'Firearms': 0.7295, 'Projectiles': 0.7197, 'Projectile weapons': 0.6701, 'Weapons': 0.6552}"
+110,{}
+114,{'Culture': 0.5614}
+116,{}

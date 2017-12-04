@@ -1,0 +1,151 @@
+1,{}
+5,{}
+10,{}
+12,{}
+13,{}
+14,{}
+15,{}
+16,"{'Novae': 0.7443, 'Cataclysmic variable stars': 0.6842, 'Astronomical events': 0.6566, 'Stellar astronomy': 0.6205, 'Star types': 0.5939, 'Stars': 0.57, 'Stellar phenomena': 0.5483, 'Variable stars': 0.5287, 'Astronomy': 0.517}"
+21,{}
+22,"{'American football': 0.6766, 'National Football League': 0.6445, 'National Football League teams': 0.578, 'National Football League seasons': 0.5668}"
+23,{'Volcanology': 0.5073}
+24,{}
+26,{}
+27,{}
+28,{}
+29,{}
+30,{}
+31,{}
+33,{}
+34,{}
+35,{}
+36,{}
+38,{}
+40,{}
+41,"{'Medical Subject Headings': 0.701, 'Animal anatomy': 0.6093, 'Clinical medicine': 0.5663, 'Medical specialties': 0.5484, 'Torso': 0.5127, 'Medicine': 0.508}"
+42,{}
+43,{}
+44,{}
+51,{}
+53,{}
+54,{}
+59,{}
+60,{}
+63,{}
+66,{}
+67,{}
+68,{}
+69,{}
+74,{}
+76,{}
+78,{}
+79,{}
+80,{}
+81,{}
+82,{}
+84,{}
+85,{}
+87,{}
+88,{}
+91,{}
+93,{}
+94,{}
+95,{}
+96,"{'Wireless': 1, 'Networks': 1, 'Broadcasting': 1, 'Communication': 1, 'Telecommunications': 1, 'Electronics': 1, 'Data transmission': 1, 'Telecommunications engineering': 1, 'Computing': 1, 'Radio': 1, 'Technology': 1, 'Electrical engineering': 1, 'Artificial objects': 0.948, 'Oral communication': 0.8901, 'Telegraphy': 0.8258, 'Amateur radio': 0.7395, 'Sound production technology': 0.7259, 'Digital technology': 0.7155, 'Radio technology': 0.704, 'Computer networking': 0.6907, 'Semiotics': 0.67, 'Second Industrial Revolution': 0.6575, 'Electricity': 0.5748, 'Mobile technology': 0.566, 'Science and technology': 0.5168}"
+98,{}
+103,{}
+104,{}
+107,{}
+108,{}
+109,{}
+110,{}
+111,{}
+112,{}
+113,{}
+114,{}
+116,{}
+118,"{'Culture': 0.7553, 'Art media': 0.6465, 'Artificial objects': 0.5624, 'Arts': 0.5614}"
+122,{}
+123,{}
+124,{}
+125,{}
+127,{}
+128,{}
+129,"{'Psychology': 1, 'Behavioural sciences': 0.9797, 'Psychological concepts': 0.8006, 'Cognitive science': 0.6528, 'Cognition': 0.6472, 'Neuroscience': 0.6214}"
+130,{}
+131,{}
+132,{}
+133,"{'Sharing economy': 1, 'Business models': 1, 'Companies': 0.9286, 'Uber (company)': 0.8501, 'Uberisation': 0.6963, 'Transportation companies of the United States': 0.6506, 'Transport companies': 0.6374, 'Decentralization': 0.5856, 'Transport': 0.5844}"
+134,{}
+135,{}
+137,{}
+139,{}
+140,"{'Diseases and disorders': 1, 'Clinical medicine': 1, 'Health': 1, 'Medical specialties': 1, 'Nervous system': 1, 'Medicine': 1, 'Neuroscience': 1, 'Psychiatric diagnosis': 1, 'Medical diagnosis': 1, 'Behavioural sciences': 1, 'Psychiatry': 0.9597, 'Psychology': 0.9549, 'Injuries': 0.9276, 'Traumatology': 0.896, 'Human diseases and disorders': 0.8275, 'Mental health': 0.8158, 'Accidents': 0.8102, 'Neurosurgery': 0.7703, 'Causes of death': 0.7674, 'Neurotrauma': 0.7599, 'Neurological disorders': 0.7351, 'Emergency medicine': 0.7273, 'Headaches': 0.6759, 'Positive psychology': 0.6691, 'Neurology': 0.6543, 'Social constructionism': 0.6424, 'Symptoms and signs: General': 0.6413, 'Symptoms and signs: Nervous system': 0.6279, 'Mental and behavioural disorders': 0.6195, 'Cognition': 0.6079, 'Psychiatry-related fields': 0.6033, 'Pain': 0.5985, 'Clinical psychology': 0.5886, 'Episodic and paroxysmal disorders': 0.5832, 'Abnormal psychology': 0.5786, 'Symptoms and signs': 0.5613, 'Epidemiology': 0.5297}"
+143,{}
+144,{}
+146,{}
+147,"{'Agriculturally beneficial insects': 1, 'Domesticated animals': 1, 'Apoidea': 1, 'Organic gardening': 1, 'Hymenoptera ecology': 1, 'Apinae': 1, 'Herbivorous insects': 1, 'Beekeeping': 1, 'Hobbies': 1, 'Insect rearing': 1, 'Insects and humans': 1, 'Insects': 1, 'Venomous Hymenoptera': 1, 'Bees': 1, 'Pollinator Hymenoptera': 1, 'Hymenoptera': 1, 'Agricultural insects': 0.9475, 'Apis (genus)': 0.9078, 'Pollinator insects': 0.8072, 'Beneficial insects': 0.723, 'Insect ecology': 0.7182, 'Apiary': 0.7179, 'Apidae': 0.6864, 'Beehives': 0.6794, 'Bee families': 0.6544, 'Shelters built or used': 0.6337, 'Ethology': 0.6022, 'Animal dance': 0.5724, 'Venomous insects': 0.5266, 'Buildings and structures used to confine animals': 0.516, 'Sustainable gardening': 0.5151, 'Western honey bee': 0.5084, 'Animal communication': 0.5003}"
+149,{}
+153,{}
+154,{}
+155,{}
+156,{}
+159,{}
+160,{}
+162,{}
+163,{}
+164,{}
+165,{}
+166,{}
+167,{}
+168,{}
+169,{}
+170,"{'Boats': 1, 'Watercraft': 1, 'Ships': 0.9668, 'Water transport': 0.8279, 'Shipbuilding': 0.8043, 'Marine engineering': 0.615, 'Shipping': 0.5484, 'Heavy industry': 0.5417}"
+171,{}
+172,{}
+173,{}
+174,{}
+177,{}
+178,{}
+179,{}
+181,{}
+182,{}
+183,{}
+184,"{'Vision': 1, 'Visual system': 1, 'Ophthalmology': 0.9861, 'Senses': 0.9703, 'Light': 0.8807, 'Eye care': 0.7251, 'Medical specialties': 0.7108, 'Eye': 0.7082, 'Sensory organs': 0.5874, 'Facial features': 0.5502, 'Face': 0.5443}"
+185,"{'Behavioural sciences': 0.6013, 'Psychology': 0.5889, 'Clinical psychology': 0.5334, 'Abnormal psychology': 0.5134}"
+186,{}
+190,{}
+192,"{'Capsicum': 0.6045, 'Capsicum cultivars': 0.5712, 'Chili peppers': 0.5422, 'Peppers': 0.5165}"
+193,{}
+194,"{'Software': 0.9893, 'Mobile software': 0.8927, 'Mobile computers': 0.8171, 'Mobile phones': 0.7286, 'Smartphones': 0.6833, 'Computing': 0.623, 'Digital media': 0.5853, 'System software': 0.5458, 'Technology': 0.5373, 'Computer-related introductions': 0.5354, 'Online services': 0.5232, 'Proprietary software': 0.5231, 'Operating system families': 0.5062}"
+195,{'Conflicts': 0.5123}
+196,{}
+197,{}
+198,{}
+199,{}
+200,{}
+201,{}
+202,{'World War II': 0.5396}
+203,{}
+204,{}
+205,{}
+206,{}
+208,{}
+209,{}
+210,{}
+211,{}
+213,{}
+214,{}
+215,{}
+216,{}
+217,"{'Projectiles': 0.5326, 'Ammunition': 0.5231}"
+218,{}
+219,{}
+220,{}
+221,{}
+223,{}
+225,"{'Evidence law': 1, 'Legal procedure': 1, 'Evidence': 1, 'Common law': 1, 'Culture': 0.8619, 'Law': 0.8336, 'Justice': 0.787, 'Public law': 0.761, 'Epistemology': 0.7528, 'Judiciaries': 0.7395, 'Social institutions': 0.6733, 'Witness': 0.6454, 'Virtue': 0.6452, 'Justification': 0.6425, 'Ethical principles': 0.6397, 'Truth': 0.5671, 'Morality': 0.5635, 'Testimony': 0.5563, 'Politics': 0.549, 'Empiricism': 0.5231}"
+227,{}
+228,{}
+229,{}
+231,{}

@@ -26,16 +26,52 @@ def get_top_relevant_topics(response, thresh_score):
 
 
 #Splitting input file by number of words
-def splitter(n, s):
+def splitter(n, s,overrlapSize=0):
     pieces = s.split()
+    # Use this line for sliding window. Here overlap size is 5
+    #str = (" ".join(pieces[i-5:i+n-5]) for i in range(5, len(pieces), n-5))
     str = (" ".join(pieces[i:i+n]) for i in range(0, len(pieces), n))
     return list(str)
 
+def mergeSentences(sentences, win_size):
+    merged_sentences = []
+    for i in range(0, len(sentences), win_size):
+        merged_sentences.append(' '.join(sentences[i:i + win_size]))
+    return merged_sentences
+
+def createOverlaps(listWindows, overlap):
+
+    i = 0
+    if overlap == 0:
+        return listWindows
+    newWindows = []
+    for window in listWindows:
+        words=[]
+        #print("Window:")
+        #print(window)
+        words = window.split()
+
+        if(i==0):
+            lastwords = words[len(words) - overlap:]
+        else:
+            words = lastwords + words
+            lastwords = words[len(words) - overlap:]
+            words = words[:len(words)-overlap]
+        #print('len(words): ', len(words))
+        #print('overlap: ', overlap)
+        #print("words: "+str(words))
+
+        #print("last words: " + str(lastwords))
+        newWindows.append(' '.join(words))
+        i += 1
+    newWindows.append(' '.join(lastwords))
+    #print(newWindows)
+    return newWindows
 
 #Build average score matrix
 #Inputs: Textfile, phrase dictionary (exemplars), windowsize
 #Use tokenizer to split data for clean text, and number of words for noisy text
-def buildArray(txtFile, clusterdict,windowsize):
+def buildArray(txtFile, clusterdict,windowsize,overlapSize):
     ####################Done once##############################################################################
     import winsound
     duration = 2000  # millisecond
@@ -59,9 +95,14 @@ def buildArray(txtFile, clusterdict,windowsize):
     
     #For splitting by number of words
     ##############################################################
-    sentences = splitter(num_words, inFile)
+    sentences = splitter(num_words, inFile,overlapSize)
+    mergedSentences = mergeSentences(sentences, windowsize)
+    overlapWindows = createOverlaps(mergedSentences, overlapSize)
+    sentences = overlapWindows
+
     ##############################################################
-    
+    #print(mergedSentences)
+
     num_columns = math.ceil(len(sentences)/windowsize) + 1
     df = pd.DataFrame(index=clusterdict, columns=range(1,num_columns))
     df = df.fillna(0)
@@ -142,7 +183,6 @@ def buildArray(txtFile, clusterdict,windowsize):
             writer_dict.writerow([key, value])
     winsound.Beep(freq, duration)
     return df
-            
         
 
 #Build the hardMax matrix
@@ -165,9 +205,10 @@ def hardMax(df):
 
 # Change according to required window size. 
 # This will be used for executing buildArray function and for plot titles
-winsize = 5
-num_words = 20 # This will be used for splitter function in buildArray function
-inputFile = 'textFile'
+winsize = 2
+num_words = 20  # This will be used for splitter function in buildArray function
+inputFile = 'redbarron_rashmi.txt'
+overlapSize = 5
 #Pass the exemplars here as phrase Dictionary
 import featureMatrix as fm
 phraseDict1 = fm.getOuput(inputFile)
@@ -183,7 +224,7 @@ phraseDict1 = fm.getOuput(inputFile)
 '''
 #Change the textfile name
 # Execute buildArray function
-my_df_array = buildArray(inputFile, phraseDict1, winsize)
+my_df_array = buildArray(inputFile, phraseDict1, winsize,overlapSize)
 
 # Execute hardmax function
 dfmax = hardMax(my_df_array)
@@ -197,7 +238,7 @@ df_new_Array.rename(columns={'id': 'Topic', 'variable': 'Time', 'value': 'Averag
 
 #Plot the facet graph with ggplot
 style.use('fivethirtyeight')
-p = ggplot(aes(x='Time', y='Average Score'), data=df_new_Array)  +geom_point(color = "#D55E00")  +facet_wrap('Topic', ncol = 2, nrow =6) +ggtitle("Distribution of Topics across Time  (Window size = "+ str(winsize) + ")") +theme_bw() +theme(axis_title_x  = element_text(vjust = -0.02)) +theme(axis_title_y  = element_text(hjust = -0.02))
+p = ggplot(aes(x='Time', y='Average Score'), data=df_new_Array)  +geom_point(color = "#D55E00")  +facet_wrap('Topic') +ggtitle("Distribution of Topics across Time  (Window size = "+ str(winsize) + ")") +theme_bw() +theme(axis_title_x  = element_text(vjust = -0.02)) +theme(axis_title_y  = element_text(hjust = -0.02))
 
 #Save plot as svg file
 p.save('facetplots/facetsvgv' + str(winsize)+'.svg', dpi=1200)
@@ -234,4 +275,3 @@ plt.tight_layout()
 fig.savefig('hardmaxplots/HardMaxsvgv'+str(winsize)+'.svg', dpi=1200)
 plt.show()
 print("Saved hardmaxplot")
-
