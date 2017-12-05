@@ -14,7 +14,8 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import matplotlib.style as style
 from ggplot import *
-
+import warnings
+warnings.filterwarnings(action='ignore', category=FutureWarning)
 ## Functions Definitions ##
 
 def get_top_relevant_topics(response, thresh_score):
@@ -24,7 +25,15 @@ def get_top_relevant_topics(response, thresh_score):
     top_relevant_topics = [topic for topic in topics if topic.score > thresh_score]
     return top_relevant_topics
 
-
+#Split file by number of words, windowsize and introduce overlap
+def sentenceSplitter(numWords, windowSize, text, overrlapSize=0):
+    n = numWords*windowSize
+    pieces = text.split()
+    # Use this line for sliding window. Here overlap size is 5
+    str = (" ".join(pieces[i-overrlapSize:i+n-overrlapSize]) for i in range(overrlapSize, len(pieces), n-overrlapSize))
+    #str = (" ".join(pieces[i:i+n]) for i in range(0, len(pieces), n))
+    return list(str)
+'''
 #Splitting input file by number of words
 def splitter(n, s,overrlapSize=0):
     pieces = s.split()
@@ -67,11 +76,11 @@ def createOverlaps(listWindows, overlap):
     newWindows.append(' '.join(lastwords))
     #print(newWindows)
     return newWindows
-
+'''
 #Build average score matrix
 #Inputs: Textfile, phrase dictionary (exemplars), windowsize
 #Use tokenizer to split data for clean text, and number of words for noisy text
-def buildArray(txtFile, clusterdict,windowsize,overlapSize):
+def buildArray(txtFile, clusterdict,windowsize,overlapSize, num_words):
     ####################Done once##############################################################################
     import winsound
     duration = 2000  # millisecond
@@ -95,50 +104,56 @@ def buildArray(txtFile, clusterdict,windowsize,overlapSize):
     
     #For splitting by number of words
     ##############################################################
-    sentences = splitter(num_words, inFile,overlapSize)
-    mergedSentences = mergeSentences(sentences, windowsize)
-    overlapWindows = createOverlaps(mergedSentences, overlapSize)
-    sentences = overlapWindows
+    sentences = sentenceSplitter(num_words, windowsize, inFile, overlapSize)
+    #mergedSentences = mergeSentences(sentences, windowsize)
+    #overlapWindows = createOverlaps(mergedSentences, overlapSize)
+    #sentences = overlapWindows
 
     ##############################################################
-    #print(mergedSentences)
+    #print("mergedSentences: ",mergedSentences)
+    #print(sentences)
 
-    num_columns = math.ceil(len(sentences)/windowsize) + 1
-    df = pd.DataFrame(index=clusterdict, columns=range(1,num_columns))
+    num_columns = len(sentences)
+    #num_columns = math.ceil(len(sentences)/windowsize) + 1
+    df = pd.DataFrame(index=clusterdict, columns=range(0, num_columns))
     df = df.fillna(0)
     
     
-    sentence_num=1
+    sentence_num = 1
     no_cluster_dict = {}
     
     # Change textRazor keys when it runs out - here and in the catch exception section
     # Once the key runs out here, it will use the key in the catch exception clause
     
-    textrazor_key = "cc9e748f39591c90171653b1ded93c6bd2b8a3da262b3a116aa6524d"
+    textrazor_key = "49bb9fee0d6262d1f107bf5e9b35078fc0e5327a2d019bbaa908c442"
+    #"cc9e748f39591c90171653b1ded93c6bd2b8a3da262b3a116aa6524d"
     #"190e8d56b61fb29f96c350d20a2947dc96218eba2bae86f7f17b212d"
     #"eb2a5954577a28b1ba8a97005281289493eee48179d2ac1883b685e6"
     #"5fdb0f64097c21849b8a9345fd8df3df5730ecfca4ab1c4e01a285b0"
     ###########################################################################################################
     
-    for i in range(0,len(sentences),windowsize):
+    #for i in range(0,len(sentences),windowsize):
+    i = 0
+    for sentence in sentences:
         #while i in range(0,len(sentences),windowsize):
         try:
-            print("i = ", i)
+            #print("i = ", i)
             client = TextRazor(textrazor_key, extractors=["topics"])
             row=0
-            sentence = str(sentences[i:i+windowsize])
-            print(i , sentence)
+            #sentence = str(sentences[i:i+windowsize])
+            print(i, sentence)
+            i+=1
             topicDict = {}
             response = client.analyze(sentence)
             topics = get_top_relevant_topics(response, 0)
             cluster_val = 0
             for topic in topics:
-                print(" ", topic.label, topic.score)
+                #print(" ", topic.label, topic.score)
                 topicDict.update({topic.label: topic.score})
             for key in clusterdict:
-                print('Phrase Number =',row)
+                #print('Phrase Number =',row)
                 phrase = clusterdict.get(key)
-                print(clusterdict.get(key))
+                #print(clusterdict.get(key))
                 val = 0
                 
                 sumProb = 0
@@ -148,15 +163,17 @@ def buildArray(txtFile, clusterdict,windowsize,overlapSize):
                     #print('Topic Number = ',j)
                     #print(topicKey, topicDict.get(topicKey))
                     if topicKey in phrase:
-                        print(topicKey, topicDict.get(topicKey))
+                        #print(topicKey, topicDict.get(topicKey))
                         val += topicDict.get(topicKey)
                         numMatch +=1
-                print('val =', val)
-                print('row =', row, 'sentence_num =', sentence_num)
+                #print('val =', val)
+                #print('row =', row, 'sentence_num =', sentence_num)
                 if numMatch!=0:
-                    df[sentence_num].iloc[row] = val/numMatch
+                    #df[sentence_num].iloc[row] = val/numMatch
+                    df.iloc[row, sentence_num-1] = val/numMatch
                 else:
-                    df[sentence_num].iloc[row] = val/1
+                    #df[sentence_num].iloc[row] = val/1
+                    df.iloc[row, sentence_num-1] = val/1
                 cluster_val += val
                 row+= 1
             if cluster_val == 0:
@@ -164,11 +181,11 @@ def buildArray(txtFile, clusterdict,windowsize,overlapSize):
             sentence_num += 1
 
         except (HTTPError, TextRazorAnalysisException) as e:
-            
             winsound.MessageBeep(0)
-            print("Error on " ,textrazor_key)
-            textrazor_key = "49bb9fee0d6262d1f107bf5e9b35078fc0e5327a2d019bbaa908c442"
+            print("Error on ", textrazor_key)
+            textrazor_key = "190e8d56b61fb29f96c350d20a2947dc96218eba2bae86f7f17b212d"
             print("i = ", i)
+            sentence_num += 1
             #i = i - windowsize
             #print("i = ", i)
             print(e)
@@ -183,7 +200,7 @@ def buildArray(txtFile, clusterdict,windowsize,overlapSize):
             writer_dict.writerow([key, value])
     winsound.Beep(freq, duration)
     return df
-        
+
 
 #Build the hardMax matrix
 def hardMax(df):
@@ -224,17 +241,19 @@ phraseDict1 = fm.getOuput(inputFile)
 '''
 #Change the textfile name
 # Execute buildArray function
-my_df_array = buildArray(inputFile, phraseDict1, winsize,overlapSize)
+my_df_array = buildArray(inputFile, phraseDict1, winsize, overlapSize, num_words)
 
+print(my_df_array)
 # Execute hardmax function
 dfmax = hardMax(my_df_array)
 
 #Display and store the Facet plot
 #Reshape the dataframe for plotting facets
-df_new_Array = my_df_array
+#df_new_Array = my_df_array
+df_new_Array = my_df_array.copy(deep=True)
 df_new_Array["id"] = df_new_Array.index
-df_new_Array = pd.melt(df_new_Array, id_vars='id', value_vars=range(1,len(df_new_Array.columns)))
-df_new_Array.rename(columns={'id': 'Topic', 'variable': 'Time', 'value': 'Average Score'}, inplace=True)
+df_new_Array = pd.melt(df_new_Array, id_vars='id', value_vars=range(0,len(df_new_Array.columns)-1))
+df_new_Array = df_new_Array.rename(columns={'id': 'Topic', 'variable': 'Time', 'value': 'Average Score'})
 
 #Plot the facet graph with ggplot
 style.use('fivethirtyeight')
@@ -246,13 +265,14 @@ print("Saved ggplot")
 
 #Save hardmax plot
 #Reshape dataframe for plotting hardmax
-df_new_max = dfmax
+#df_new_max = dfmax
+df_new_max = dfmax.copy(deep=True)
 df_new_max["id"] = df_new_max.index
-df_new_max = pd.melt(df_new_max, id_vars='id', value_vars=range(1,len(df_new_max.columns)))
+df_new_max = pd.melt(df_new_max, id_vars='id', value_vars=range(0, len(df_new_max.columns)-1))
 #Filter out 0 values
 df_filter = df_new_max.loc[df_new_max['value'] != 0]
 ylabel = list(df_filter.groupby("id").sum().sort_values('value').index.values)
-df_filter.rename(columns={'id': 'Topic', 'variable': 'Time', 'value': 'Avg_Score'}, inplace=True)
+df_filter = df_filter.rename(columns={'id': 'Topic', 'variable': 'Time', 'value': 'Avg_Score'})
 
 #Plot the graph
 sns.set_style("whitegrid", {'axes.grid' : False})
