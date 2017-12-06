@@ -15,6 +15,9 @@ import matplotlib.pyplot as plt
 import matplotlib.style as style
 from ggplot import *
 import warnings
+import pickle
+import os.path
+
 warnings.filterwarnings(action='ignore', category=FutureWarning)
 ## Functions Definitions ##
 
@@ -77,6 +80,39 @@ def createOverlaps(listWindows, overlap):
     #print(newWindows)
     return newWindows
 '''
+
+# Pickle data. We use this method to store list of topics to avoid unnecessarily calling textrazor
+## Input: - data: Object to be pickled. In our case, list of topics tuples
+##        - filename: name of file to store data
+def saveData(data, filename):
+    file = open(filename, 'wb')
+    pickle.dump(data, file)
+    file.close()
+
+# Load pickled data. We use this method to load the list of topics that we previously pickled
+## Input: - filename: name of file from which we load pickled data
+## Output: unpickled data
+def loadData(filename):
+    file = open(filename, 'rb')
+    data = pickle.load(file)
+
+    end_of_file = False
+    while not end_of_file:
+        try:
+            # Unpickle the next object.
+            data = pickle.load(file)
+
+        except EOFError:
+            # Set the flag to indicate the end
+            # of the file has been reached.
+            end_of_file = True
+
+    file.close()
+    return data
+
+def fileExists(filename):
+    return os.path.isfile(filename)
+
 #Build average score matrix
 #Inputs: Textfile, phrase dictionary (exemplars), windowsize
 #Use tokenizer to split data for clean text, and number of words for noisy text
@@ -90,6 +126,10 @@ def buildArray(txtFile, clusterdict,windowsize,overlapSize, num_words):
     from textrazor import TextRazorAnalysisException
     from urllib.error import HTTPError
     inFile = open(txtFile, encoding='utf8').read()
+
+    dataMatrixFileName = "data_matrix_win"+str(windowsize)+"_overlap"+str(overlapSize)+".dat"
+    if(fileExists(dataMatrixFileName)):
+        return loadData(dataMatrixFileName)
     #For clean data
     ##############################################################
     #tokenizer = nltk.data.load('tokenizers/punkt/english.pickle')
@@ -201,6 +241,8 @@ def buildArray(txtFile, clusterdict,windowsize,overlapSize, num_words):
         for key, value in no_cluster_dict.items():
             writer_dict.writerow([key, value])
     winsound.Beep(freq, duration)
+
+    saveData(df, dataMatrixFileName)
     return df
 
 
