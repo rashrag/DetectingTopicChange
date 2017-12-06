@@ -183,7 +183,9 @@ def buildArray(txtFile, clusterdict,windowsize,overlapSize, num_words):
         except (HTTPError, TextRazorAnalysisException) as e:
             winsound.MessageBeep(0)
             print("Error on ", textrazor_key)
-            textrazor_key = "190e8d56b61fb29f96c350d20a2947dc96218eba2bae86f7f17b212d"
+            textrazor_key = "fdd39e9dde7d84983bbe964c514035f3c483d7df5996f62541ef76bc"
+            #fdd39e9dde7d84983bbe964c514035f3c483d7df5996f62541ef76bc
+            #190e8d56b61fb29f96c350d20a2947dc96218eba2bae86f7f17b212d
             print("i = ", i)
             sentence_num += 1
             #i = i - windowsize
@@ -257,7 +259,7 @@ df_new_Array = df_new_Array.rename(columns={'id': 'Topic', 'variable': 'Time', '
 
 #Plot the facet graph with ggplot
 style.use('fivethirtyeight')
-p = ggplot(aes(x='Time', y='Average Score'), data=df_new_Array)  +geom_point(color = "#D55E00")  +facet_wrap('Topic') +ggtitle("Distribution of Topics across Time  (Window size = "+ str(winsize) + ")") +theme_bw() +theme(axis_title_x  = element_text(vjust = -0.02)) +theme(axis_title_y  = element_text(hjust = -0.02))
+p = ggplot(aes(x='Time', y='Average Score'), data=df_new_Array)  +geom_point(color = "#D55E00")  +facet_wrap('Topic') +ggtitle("Topic Confidence Score Distribution across Time  (window size = "+ str(winsize) + ", overlap = " + str(overlapSize) + ")") +theme_bw() +theme(axis_title_x  = element_text(vjust = -0.02)) +theme(axis_title_y  = element_text(hjust = -0.02))
 
 #Save plot as svg file
 p.save('facetplots/facetsvgv' + str(winsize)+'.svg', dpi=1200)
@@ -283,9 +285,9 @@ import matplotlib.style as style
 plt.figure(figsize=(20,10))
 
 #sns.set(font_scale = 2)
-strip_plot = sns.stripplot(x='Time' , y = 'Topic', data=df_filter,order=ylabel,size = 10, color = '#D55E00').set_title("Assigned Topics vs. Time (Window size = "+str(winsize)+")",fontsize=35)
-strip_plot.axes.set_xlabel("Time",fontsize=30)
-strip_plot.axes.set_ylabel("Topics",fontsize=30)
+strip_plot = sns.stripplot(x='Time' , y = 'Topic', data=df_filter,order=ylabel,size = 10).set_title("Distribution of HardMax Assigned Topics across Time (window size = "+str(winsize)+ ", overlap = "+ str(overlapSize)+")",fontsize=16)
+strip_plot.axes.set_xlabel("Time",fontsize=16)
+strip_plot.axes.set_ylabel("Topics",fontsize=16)
 #strip_plot.axes.set_yticklabels(["Air forces","Roy Brown\n(RAF officer)","Imperial German\nArmy Air Service", "Jagdstaffel", "Military"], va ='center' )#,rotation = 50
 #strip_plot.axes.set_axes_locator([1,2,3,4,5])
 fig = strip_plot.get_figure()
